@@ -108,6 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   colorActual: {r: 0, g: 0, b: 0, a: 0}
   "tama\xF1oActual": 0
+  deathSound: {fileID: 8300000, guid: 4228d0c0799fbd44bb2f7879ee0d12d7, type: 3}
 --- !u!58 &5281966522983248126
 CircleCollider2D:
   m_ObjectHideFlags: 0

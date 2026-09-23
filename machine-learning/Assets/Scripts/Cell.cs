@@ -6,6 +6,7 @@ public class Cell : MonoBehaviour
 {
     [HideInInspector] public Color colorActual;
     [HideInInspector] public float tamañoActual;
+    public AudioClip deathSound;
 
     private GameManager manager;
     private SpriteRenderer spriteRenderer;
@@ -41,6 +42,7 @@ public class Cell : MonoBehaviour
         {
             manager.RegistrarEliminacion(gameObject);
         }
+        AudioManager.instance.PlaySFX(deathSound, 1, Random.Range(0.8f, 1.2f));
         Destroy(gameObject);
     }
 }
